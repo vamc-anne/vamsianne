@@ -1,0 +1,67 @@
+/*global styles --START*/
+body{
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin: 0;
+}
+/*global styles --END*/
+
+/*Header section styles --START*/
+
+.brand{
+    font-size: 21px;
+    float: left;
+}
+
+navbar{
+    background-color:#206fa7; 
+    display: inherit;
+    width: auto;
+    overflow: auto;
+    padding: 10px;
+}
+
+navbar nav{
+    float: right;
+    margin: 7px;
+    padding: 7px;
+    display: inline-block;
+    color: white;
+}
+
+navbar .nav a{
+    text-decoration: none;
+    color: white;
+}
+
+navbar .nav:hover{
+    box-shadow: #3b415f 0 1px 2px 1px; 
+    transform: scale(1.1,1.1);
+}
+
+/*Header section styles --END*/
+
+/*Container section styles --START*/
+
+.container{
+    background: #b7d3e959;
+    padding: 20px;    
+}
+
+.briefMe{
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+.myImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.description{
+    text-align: center;
+    color: #3b415f;
+}
+
+/*Container section styles --END*/
