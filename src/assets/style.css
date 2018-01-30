@@ -1,6 +1,6 @@
 /*global styles --START*/
 body{
-    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-family: 'Lora', 'Raleway', serif;
     margin: 0;
 }
 /*global styles --END*/
@@ -9,10 +9,10 @@ body{
 
 .brand{
     font-size: 21px;
-    float: left;
+    float: left !important;
 }
 
-navbar{
+.navbar{
     background-color:#206fa7; 
     display: inherit;
     width: auto;
@@ -20,7 +20,7 @@ navbar{
     padding: 10px;
 }
 
-navbar nav{
+.navbar nav{
     float: right;
     margin: 7px;
     padding: 7px;
@@ -28,14 +28,13 @@ navbar nav{
     color: white;
 }
 
-navbar .nav a{
+.navbar a{
     text-decoration: none;
     color: white;
 }
 
-navbar .nav:hover{
-    box-shadow: #3b415f 0 1px 2px 1px; 
-    transform: scale(1.1,1.1);
+.navbar .nav:hover{ 
+    transform: scale(1.2,1.2);
 }
 
 /*Header section styles --END*/
@@ -62,6 +61,32 @@ navbar .nav:hover{
 .description{
     text-align: center;
     color: #3b415f;
+}
+
+.formField{
+    margin: 20px;
+    border-bottom: solid 2px grey;
+}
+
+.formField input{
+    border:none;
+    width: 200px;
+    height: 50px;
+    background-color: inherit;
+}
+
+.formField input:focus{
+    border:none;
+    border-bottom: solid 2px dodgerblue;
+    outline: none;
+}
+
+.formField label{
+    font-size: 20px;
+    display: inline-block;
+    min-width: 170px;
+    max-width: 300px;
+    padding: 15px
 }
 
 /*Container section styles --END*/

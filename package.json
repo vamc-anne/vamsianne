@@ -1,0 +1,65 @@
+{
+  "name": "vamsianne",
+  "version": "1.0.0",
+  "description": "blog about me, info i found good while browsing and all sorts of sense!",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start:dev": "node build/server.js",
+    "start:server": "webpack-dev-server --inline --progress --port 1000 --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamc-anne/vamsianne.git"
+  },
+  "keywords": [
+    "vamsianne",
+    "blog",
+    "vamsi",
+    "anne",
+    "intresting",
+    "trending",
+    "topic",
+    "tech",
+    "etc."
+  ],
+  "author": "vamsi anne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamc-anne/vamsianne/issues"
+  },
+  "homepage": "https://github.com/vamc-anne/vamsianne#readme",
+  "dependencies": {
+    "@angular/animations": "^5.2.2",
+    "@angular/common": "^5.2.2",
+    "@angular/compiler": "^5.2.2",
+    "@angular/core": "^5.2.2",
+    "@angular/forms": "^5.2.2",
+    "@angular/http": "^5.2.2",
+    "@angular/platform-browser": "^5.2.2",
+    "@angular/platform-browser-dynamic": "^5.2.2",
+    "@angular/router": "^5.2.2",
+    "core-js": "^2.5.3",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "angular2-template-loader": "^0.6.2",
+    "codelyzer": "^4.0.2",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "null-loader": "^0.1.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.20.1",
+    "ts-loader": "^3.3.1",
+    "tslint": "^5.9.1",
+    "tslint-angular": "^1.1.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
+  }
+}
