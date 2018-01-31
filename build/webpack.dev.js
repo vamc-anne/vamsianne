@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -56,6 +57,7 @@ module.exports = {
       .CommonsChunkPlugin({
         name: ['app', 'vendor', 'polyfills']
       }),
-    new HtmlWebpackPlugin({template: './src/index.html'})
+    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new CopyWebpackPlugin([ { from: helpers.root('src', 'assets/imgz'), to: 'assets/imgz' } ])
   ]
 };
