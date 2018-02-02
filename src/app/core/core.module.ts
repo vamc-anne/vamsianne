@@ -5,15 +5,14 @@ import {RouterConfig, Components} from './core.router';
 
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
-import {PortfolioComponent} from './components/portfolio/portfolio.component';
 
 @NgModule({
     declarations: [
-        HeaderComponent, FooterComponent, PortfolioComponent, ...Components
+        HeaderComponent, FooterComponent, ...Components
     ],
     imports: [
         FormsModule, CommonModule, RouterConfig
     ],
-    exports: [CommonModule, HeaderComponent, FooterComponent, PortfolioComponent]
+    exports: [CommonModule, HeaderComponent, FooterComponent]
 })
 export class CoreModule {}

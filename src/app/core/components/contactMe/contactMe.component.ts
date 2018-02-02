@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    selector: 'contact-me',
     templateUrl: './contactMe.view.html'
 })
 

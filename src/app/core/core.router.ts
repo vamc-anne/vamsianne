@@ -3,6 +3,7 @@ import {AboutComponent} from './components/about/about.component';
 import {HomeComponent} from './components/home/home.component';
 import {PageNotFoundComponent} from './components/pageNotFound/pageNotFound.component';
 import {ContactMeComponent} from './components/contactMe/contactMe.component';
+import {PortfolioComponent} from './components/portfolio/portfolio.component';
 
 const routes: Routes = [
     {
@@ -18,9 +19,13 @@ const routes: Routes = [
     {
         path: 'contactMe',
         component: ContactMeComponent
+    },
+    {
+        path: 'portfolio',
+        component: PortfolioComponent
     }
 ];
 
 export const RouterConfig = RouterModule.forChild(routes);
 
-export const Components = [AboutComponent, HomeComponent, PageNotFoundComponent, ContactMeComponent];
+export const Components = [AboutComponent, HomeComponent, PageNotFoundComponent, ContactMeComponent, PortfolioComponent];

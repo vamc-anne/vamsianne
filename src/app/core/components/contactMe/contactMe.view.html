@@ -1,20 +1,25 @@
-<form name="contactMe">
-    <div class="formField">
-        <label for="name">Name</label>
-        <input name="name" id="name" type="text" [(ngModel)]="contact.name"/>
-    </div>
-    <div class="formField">
-        <label for="name">Email Address</label>
-        <input name="email" id="email" type="email" [(ngModel)]="contact.email"/>
-    </div>
-    <div class="formField">
-        <label for="name">Phone Number</label>
-        <input name="phone" id="phone" type="text" [(ngModel)]="contact.phone"/>
-    </div>
-    <div class="formField">
-        <label for="message">Message</label>
-        <input name="message" id="message" type="textArea" [(ngModel)]="contact.message"/>
-    </div>
-    <div class="g-recaptcha" data-sitekey="6LemVEMUAAAAACKPJJbWmc1XUO9PpQeO20Sk_UIj"></div>
-    <button class="info"> Submit </button>
-</form>
+<section class="contactMe">
+    <form name="contactMe">
+        <h1 class="description">Contact Me</h1>
+        <div class="formField">
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" [(ngModel)]="contact.name" />
+        </div>
+        <div class="formField">
+            <label for="name">Email Address</label>
+            <input name="email" id="email" type="email" [(ngModel)]="contact.email" />
+        </div>
+        <div class="formField">
+            <label for="name">Phone Number</label>
+            <input name="phone" id="phone" type="text" [(ngModel)]="contact.phone" />
+        </div>
+        <div class="formField">
+            <label for="message">Message</label>
+            <input name="message" id="message" type="textArea" [(ngModel)]="contact.message" />
+        </div>
+        <div class="formField">
+            <!--<div class="g-recaptcha" data-sitekey="6LemVEMUAAAAACKPJJbWmc1XUO9PpQeO20Sk_UIj"></div>-->
+            <button class="info"> Submit </button>
+        </div>
+    </form>
+</section>

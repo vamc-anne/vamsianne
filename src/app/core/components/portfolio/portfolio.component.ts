@@ -23,7 +23,7 @@ export class PortfolioComponent implements OnInit {
             }, {
                 title: 'Cognizant Advance Apps',
                 appName: 'Proctor',
-                redirectTo: 'https://revel.pearson.com',
+                redirectTo: 'https://www.cognizant.com/en-ch/application-services/app-development',
                 img: 'assets/imgz/proctor.PNG'
             }, {
                 title: 'Sanofi',
