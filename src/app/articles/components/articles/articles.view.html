@@ -1,0 +1,7 @@
+<section class="articles">
+    <div *ngFor="let articleStack of articleStacks">
+        <div *ngFor="let article of articles[articleStack]">
+            <h1>{{article.title}}</h1>
+        </div>
+    </div>
+</section>
