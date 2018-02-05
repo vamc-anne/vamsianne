@@ -5,8 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
+    "build:prod": "webpack --config build/webpack.prod.js",
+    "start:prod": "firebase serve",
+    "deploy:prod" : "firebase deploy",
     "start:dev": "node build/server.js",
-    "start": "webpack-dev-server --inline --progress --port 1000 --host 0.0.0.0 --history-api-fallback"
+    "start": "webpack-dev-server --inline --progress --port 2000 --history-api-fallback"
   },
   "repository": {
     "type": "git",

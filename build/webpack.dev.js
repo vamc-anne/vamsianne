@@ -40,16 +40,16 @@ module.exports = {
       // loader: "css-loader"     }   ] },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader"})
+        use: ExtractTextPlugin.extract({ fallback: "style-loader", use: "css-loader" })
       }
     ]
   },
   plugins: [
     // Workaround for angular/angular#11580
     new webpack.ContextReplacementPlugin(
-    // The (\\|\/) piece accounts for path separators in *nix and Windows
-    /angular(\\|\/)core(\\|\/)@angular/, helpers.root('./src'), { // location of your src
-    } // a map of your routes
+      // The (\\|\/) piece accounts for path separators in *nix and Windows
+      /angular(\\|\/)core(\\|\/)@angular/, helpers.root('./src'), { // location of your src
+      } // a map of your routes
     ),
     new ExtractTextPlugin("styles.css"),
     new webpack
@@ -57,7 +57,8 @@ module.exports = {
       .CommonsChunkPlugin({
         name: ['app', 'vendor', 'polyfills']
       }),
-    new HtmlWebpackPlugin({template: './src/index.html'}),
-    new CopyWebpackPlugin([ { from: helpers.root('src', 'assets/imgz'), to: 'assets/imgz' } ])
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new CopyWebpackPlugin([{ from: helpers.root('src', 'assets/imgz'), to: 'assets/imgz' }, { from: helpers.root('src', 'fav.ico'), to: '' },
+    ])
   ]
 };
