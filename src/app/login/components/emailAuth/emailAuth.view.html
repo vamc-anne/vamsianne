@@ -1,0 +1,21 @@
+<form class='emailAuth' name='emailAuthForm' #emailAuthForm='ngForm' [hidden]='!renderEmailVerification'>
+    <div *ngIf='!emailVerified; else emailVerifiedTpl'>
+        <input type='text' placeholder="email" email required name='usrName' #usrName='ngModel' [(ngModel)]='emailAuth.email' />
+        <button [disabled]='usrName.invalid' (click)='checkIfUserExists()'>Verify</button>
+        <button class="cancelbtn" (click)='cancel()'>cancel</button>
+    </div>
+    <ng-template #emailVerifiedTpl>
+        <h1>{{emailAuth.email}}</h1>
+        <input type='password' placeholder='password' required name='pwd' #pwd='ngModel' [(ngModel)]='emailAuth.password' />
+        <div *ngIf='!isNewUser; else newUser'>
+            <button [disabled]='pwd.invalid' (click)='signIn()'>SignIn</button>
+            <button class="cancelbtn" (click)='cancel()'>cancel</button>
+        </div>
+        <ng-template #newUser>
+            <button [disabled]='pwd.invalid' (click)='signUp()'>SignUp</button>
+            <button class="cancelbtn" (click)='cancel()'>cancel</button>
+        </ng-template>
+    </ng-template>
+    <p class="errorMessage">{{errorMessage}}</p>
+</form>
+<button class="emailauth" (click)='renderEmailVerification = true' [hidden]='renderEmailVerification'><i class="fa fa-envelope"></i>&nbsp;&nbsp;Login with email</button>

@@ -1,0 +1,8 @@
+<div *ngIf='isBrowser; else server' [class]="class">
+  <textarea #editor [hidden]='!isEditorReady'></textarea>
+</div>
+<ng-template #server>
+  <div>
+    <p>Loading...</p>
+  </div>
+</ng-template>

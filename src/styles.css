@@ -1,0 +1,272 @@
+/*global styles --START*/
+
+body {
+  font-family: "Raleway", "Lora", serif;
+  margin: 0;
+  /* background-color: #b7d3e959; */
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  margin: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/*global styles --END*/
+
+/*Container section styles --START*/
+
+.container {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.briefMe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.myImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.description {
+  text-align: center;
+  color: #3b415f;
+  margin: 20px;
+}
+
+.formField {
+  margin: 0px 20%;
+}
+
+.formField input,
+.formField textarea {
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: inherit;
+  border-bottom: solid 2px grey;
+  font-size: 16px;
+  margin-left: 15px;
+  padding: 3px;
+}
+
+.formField .dropdown {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: inherit;
+  border-bottom: solid 2px grey;
+  font-size: 16px;
+  margin-left: 15px;
+  padding: 0;
+}
+
+.formField input:focus,
+.formField textarea:focus {
+  border: none;
+  border-bottom: solid 2px dodgerblue;
+  outline: none;
+}
+
+.formField .ng-dirty.ng-invalid.ng-touched {
+  border-bottom: solid 2px red;
+}
+
+.formField .ng-touched.ng-dirty.ng-valid {
+  border-bottom: solid 2px #12a912;
+}
+
+.formField label,
+.labelCase {
+  font-size: 20px;
+  display: inline-block;
+  min-width: 170px;
+  max-width: 500px;
+  padding: 15px;
+}
+
+button {
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  color: white;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: grey 0 1px 1px 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #206fa7a8;
+}
+
+.info {
+  background-color: #206fa7;
+}
+
+.success {
+  background-color: forestgreen;
+}
+
+portfolio section {
+  overflow: hidden;
+  padding: 20px;
+  background-color: #216ea685;
+}
+
+about-me h1,
+contact-me h1,
+portfolio h1 {
+  font-size: 40px;
+}
+
+.portfolio {
+  width: 23%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.portfolio img {
+  margin: 0 8%;
+  padding: 3px;
+  height: 180px;
+  width: 95%;
+  box-shadow: 0px 0px 100px -20px #216ea6;
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media (max-width: 1050px) {
+  .portfolio {
+    width: 43%;
+    height: 100%;
+  }
+
+  portfolio section {
+    margin: 3%;
+    padding: 5%;
+  }
+
+  .abtmeDesc {
+    margin: 20px 5% !important;
+  }
+
+  .formField {
+    margin: 5px 8% !important;
+  }
+}
+@media (max-width: 700px) {
+  .portfolio img {
+    height: 180px;
+  }
+}
+@media (max-width: 1050px) and (orientation: landscape) {
+  /* .portfolio img {
+    width: 80%;
+    height: 65%;
+    margin: 0 8%;
+  } */
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: #abb5bb;
+}
+
+.portfolio img:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 500ms;
+  background-color: #216ea6;
+}
+
+.abtmeDesc {
+  margin: 20px 20%;
+}
+
+/** global font icons start */
+.font {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.font24 {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.favIcon {
+  background-image: url("./assets/fonts/ic_favorite_black_18px.svg");
+}
+
+.menuHorizantal {
+  background-image: url("./assets/fonts/ic_menu_white_24px.svg");
+  position: relative;
+  cursor: pointer;
+}
+
+/** font ions form end */
+/** globallike */
+.likes {
+  position: relative;
+  cursor: pointer;
+}
+
+.brand:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.likes .count {
+  font-size: 14px;
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  transition: 0.5s all ease-in-out;
+}
+
+/*Container section styles --END*/

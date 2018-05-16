@@ -1,0 +1,17 @@
+<section>
+  <!-- <a routerLink="/articles" class="btn-link" routerLinkActive="active">Back</a> -->
+  <form name='addarticle' #addarticle='ngForm'>
+    <div class="formField">
+      <label for="title">Title</label>
+      <input name="title" id="title" type="text" [(ngModel)]="article.title" minlength="5" required/>
+    </div>
+    <div class="formField-itm">
+      <label for="title" class="labelCase">Stack</label>
+      <tagger [stack]="stacks" (add)="addStack($event)" (remove)="removeStack($event)"></tagger>
+    </div>
+    <text-editor (onEditorContentChange)="contentEdited($event)" class="contentEditor"></text-editor>
+    <div class="formField">
+      <button class="info" type="button" [disabled]='!addarticle.valid' (click)="addArticle()"> Submit </button>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,23 @@
+<form class="phverificationForm" [hidden]='!renderPhoneVerification' name='phverificationForm' #phverificationForm='ngForm'>
+    <div class='contactno' *ngIf='!verificationForm.otpSent'>
+        <h1>Enter your phone number</h1>
+        <div class='recaptcha-container' id="recaptcha-container"></div>
+        <input type='textbox' placeholder="+91" name='countryCode' #countryCode="ngModel" [(ngModel)]='verificationForm.countryCode' class='cc' required/>
+        <input type='textbox' placeholder="9999999999" name='phoneNumber' #phoneNumber="ngModel" [(ngModel)]='verificationForm.phoneNumber' class='phno' required/>
+        <button [disabled]='(!verificationForm.catchpaVerified || countryCode.invalid || phoneNumber.invalid)' (click)='loginWithPhone()'>Verify</button>
+    </div>
+    <div class='verificationcode' *ngIf='verificationForm.otpSent'>
+        <h1 >Verify your phone number</h1>
+        <h1 class='phoneNumDetails'>{{contactNo}}</h1>
+        <input type='textbox' name='otp' #otp="ngModel" [(ngModel)]='verificationForm.otp' class='otp' minlength="6" required/>
+        <button (click)='verifyOTP()' [disabled]='otp.invalid' >Continue</button>
+    </div>
+    <button class="cancelbtn" (click)='cancel()'>Cancel</button>
+    <div class='error'>
+        {{error.message}}
+    </div>
+    <div class='info'>
+        {{info.message}}    
+    </div>
+</form>
+<button class="phoneauth" (click)='renderPhoneVerification = true' *ngIf='!renderPhoneVerification'> <i class="fa fa-phone"></i>&nbsp;&nbsp;Login with Phone</button>

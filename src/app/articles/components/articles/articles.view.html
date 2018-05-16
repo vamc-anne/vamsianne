@@ -1,0 +1,18 @@
+<section class="articles">
+  <div class="article" *ngFor="let article of articles" (click)="openArticle(article)">
+    <h2 class="title">{{article.title}}</h2>
+    <div class="brief">
+      {{article.brief}}
+    </div>
+    <div class="attrs">
+      <span class="tags">
+        <span class="tag" (ng-click)="goToStack(article.stack)" *ngFor="let stack of article.stack.split(',')">{{stack}}</span>
+      </span>
+
+      <span class="likes">
+        <span class="count">{{article.likes}}</span>
+        <span class="font favIcon"></span>
+      </span>
+    </div>
+  </div>
+</section>

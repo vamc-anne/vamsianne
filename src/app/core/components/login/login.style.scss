@@ -1,0 +1,38 @@
+.login {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  h1 {
+    text-align: center;
+  }
+  .errorMessage {
+    color: red;
+  }
+}
+
+.anonmyusauth {
+  background-color: #1f8792;
+}
+
+input {
+  display: inline-block;
+  height: 42px;
+  width: 80%;
+  padding: 10px;
+  margin: 15px;
+  font-size: 15px;
+}
+
+button {
+  background-color: brown;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.cancelbtn {
+  background-color: white !important;
+  color: black;
+  border: solid 1px grey;
+}

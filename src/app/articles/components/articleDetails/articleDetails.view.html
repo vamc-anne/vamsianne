@@ -1,0 +1,15 @@
+<section class="articleDetails">
+  <h1 class='title'>{{article.title}}</h1>
+  <div class="attrs">
+    <span class="tag" (ng-click)="goToStack(article.stack)">{{article.stack}}</span>
+    <span class="likes" (click)="like()">
+      <span class="count">{{article.likes}}</span>
+      <span class="font favIcon"></span>
+    </span>
+  </div>
+  <div [innerHtml]='article.content'></div>
+  <div *ngIf='article.author' class="author">
+    <i>Contributed by</i>
+    <b>{{article.author | titlecase}}</b>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="contactMe">
+    <form name="contactMe" #contactMe='ngForm'>
+        <h1 class="description">Contact Me</h1>
+        <div class="formField">
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" [(ngModel)]="contact.name" required/>
+        </div>
+        <div class="formField">
+            <label for="name">Email Address</label>
+            <input name="email" id="email" type="text" email [(ngModel)]="contact.email" required/>
+        </div>
+        <div class="formField">
+            <label for="name">Phone Number(XX-XXXXXXXXXX)</label>
+            <input name="phone" id="phone" type="text" pattern="[0-9]{12}" [(ngModel)]="contact.phone"/>
+        </div>
+        <div class="formField">
+            <label for="message">Message</label>
+            <input name="message" id="message" minlength="50" type="textArea" [(ngModel)]="contact.message" required/>
+        </div>
+        <div class="formField">
+            <!--<div class="g-recaptcha" data-sitekey="6LemVEMUAAAAACKPJJbWmc1XUO9PpQeO20Sk_UIj"></div>-->
+            <button class="info" [disabled]='!contactMe.valid' (click)="submitContactInfo()"> Submit </button>
+        </div>
+    </form>
+</section>

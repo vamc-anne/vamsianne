@@ -1,0 +1,11 @@
+<section>
+  <div class="tagger">
+    <span class="tag" *ngFor="let tag of tags; let i=index">
+      {{tag}} &nbsp;
+      <span (click)="removeTag(i)" class="close">x</span>
+    </span>
+    <span>
+      <input type="text" [(ngModel)]="tag" class="newTag" (keyup.enter)="makeTag()" autocomplete="on" />
+    </span>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+.phverificationForm {
+  left: 35%;
+  padding: 15px;
+  border: solid 1px grey;
+  .cc,
+  .phno,
+  .otp {
+    display: inline-block;
+    height: 42px;
+    width: 16%;
+    padding: 10px;
+    margin: 15px;
+  }
+  .phno,
+  .otp {
+    width: 65%;
+  }
+  .recaptcha-container {
+    margin: 20px;
+    width: 100%;
+  }
+  button {
+    width: 90%;
+    margin: 15px;
+  }
+  .phoneNumDetails {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 89, 255);
+  }
+  .error {
+    color: red;
+  }
+  .info {
+    color: grey;
+  }
+}
+.phoneauth {
+  background-color: rgba(5, 146, 5, 0.9);
+  font-size: 15px;
+  margin: 15px 0;
+}
+
