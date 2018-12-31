@@ -5,6 +5,8 @@
 /dist-server
 /tmp
 /out-tsc
+/.firebase
+/%RESOURCE_DIR%
 
 # dependencies
 /node_modules

@@ -22,7 +22,7 @@ export class LoginService {
         resolve(this.firebaseSrvc);
       } else {
         const err = new Error(
-          "Kindly call this service with your firebase configuration"
+          'Kindly call this service with your firebase configuration'
         );
         reject(err);
       }

@@ -139,7 +139,7 @@ portfolio h1 {
 }
 
 .portfolio {
-  width: 23%;
+  width: 30%;
   display: inline-block;
   margin: 10px;
 }
@@ -147,7 +147,7 @@ portfolio h1 {
 .portfolio img {
   margin: 0 8%;
   padding: 3px;
-  height: 180px;
+  height: 280px;
   width: 95%;
   box-shadow: 0px 0px 100px -20px #216ea6;
 }
@@ -175,7 +175,7 @@ portfolio h1 {
 }
 @media (max-width: 700px) {
   .portfolio img {
-    height: 180px;
+    height: 150px;
   }
 }
 @media (max-width: 1050px) and (orientation: landscape) {

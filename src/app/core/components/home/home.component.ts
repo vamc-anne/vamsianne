@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-
 @Component({
+    styleUrls: ['./home.style.scss'],
     templateUrl: './home.view.html'
 })
 

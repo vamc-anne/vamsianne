@@ -17,6 +17,14 @@
   }
 }
 
+@media(max-width: 1050px){
+  .popup {
+    left:3%;
+    right:3%;
+    top: 20%;
+  }
+}
+
 .modalBck {
   position: fixed;
   z-index: 9999;

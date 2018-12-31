@@ -59,7 +59,6 @@
     "@angular/cli": "^1.7.3",
     "@angular/compiler-cli": "^5.2.8",
     "@angular/language-service": "^5.2.8",
-    "@ngtools/webpack": "1.10.2",
     "@storybook/angular": "^3.3.15",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",

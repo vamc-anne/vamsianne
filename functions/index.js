@@ -2,7 +2,6 @@
 //http://localhost:5000/vamsianne-91b98/us-central1/api/
 const functions = require("firebase-functions");
 const expressJS = require("express");
-const authKeys = require("./cloudServiceKeys.json");
 const cors = require("cors");
 
 // These are important and needed before anything else
