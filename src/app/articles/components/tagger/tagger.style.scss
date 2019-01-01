@@ -1,0 +1,27 @@
+.tag {
+  background: #185b8c;
+  color: white;
+  border-radius: 10px;
+  padding:8px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.newTag {
+  border: none;
+  padding: 10px;
+  font-size: 1.2em;
+  &:focus{
+      outline: none;
+  }
+}
+
+.tagger{
+    border-bottom: solid 2px grey;
+    margin: 15px;
+    width: 100%;
+}
+
+.close{
+    cursor: pointer;
+}

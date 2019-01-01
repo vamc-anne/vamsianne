@@ -1,0 +1,19 @@
+
+/*Toaster Service --starts*/
+.toaster{
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top:70px;
+    z-index: 1000;
+}
+
+.toaster .close{
+    float: right;
+    margin-right: 30px;
+    color: white;
+    cursor: pointer;
+}
+/*Toaster Service --ends*/

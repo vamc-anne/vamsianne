@@ -1,0 +1,14 @@
+.articleDetails{
+    .title{
+        text-align: center;
+        font-size: 40px;
+    }
+    div{
+        margin: 30px;
+        @media (min-width: 768px) {
+            margin: 40px 10%;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

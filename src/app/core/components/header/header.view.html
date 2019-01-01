@@ -1,0 +1,39 @@
+<section class="header">
+  <div class="navbar" *ngIf='isVisible'>
+    <input aria-controls="navbar-main" id="navbar-toggle-cbox" role="button" hidden type="checkbox">
+    <nav class="brand">
+      <a routerLink="/home" routerLinkActive="active">
+        <b>Vamsi</b> Anne</a>
+    </nav>
+    <label for="navbar-toggle-cbox">
+      <nav class="nav mobMenu">
+        <a>
+          <span class="font24 menuHorizantal"></span>
+        </a>
+      </nav>
+    </label>
+    <nav *ngIf='!isLoggedIn; else usermenu' class="nav collapse">
+      <a (click)="goTo('/login')" class="pointer">Log in</a>
+    </nav>
+    <nav class="nav collapse">
+      <a routerLink="/contactMe" routerLinkActive="active">Contact me</a>
+    </nav>
+    <!-- <nav class="nav collapse">
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </nav>
+    <nav class="nav collapse">
+      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+    </nav> -->
+    <nav class="nav collapse">
+      <a routerLink="/articles" routerLinkActive="active">Articles</a>
+    </nav>
+    <nav class="nav collapse">
+      <a routerLink="/articles/addarticle" routerLinkActive="active">Write</a>
+    </nav>
+  </div>
+  <ng-template #usermenu>
+    <nav class="nav collapse">
+      <a (click)='logout()' class="pointer">Sign out</a>
+    </nav>
+  </ng-template>
+</section>

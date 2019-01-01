@@ -1,0 +1,6 @@
+<section>
+    <h1 class="description">Portfolio</h1>
+    <div class="portfolio" *ngFor="let app of portfolio | async">
+        <a [href]="app.redirectTo" target="_blank"><img [src]="app.img" /></a>
+    </div>
+</section>

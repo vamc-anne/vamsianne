@@ -1,0 +1,6 @@
+<div class="{{config.modalClass}}" (click)="config.canClose && config.closeOnOutsideClick && closePopup()">
+  <div class="popup {{config.size}}" (click)="$event.stopPropagation()">
+    <span class="modalCloseBtn" *ngIf="config.canClose" (click)="closePopup()">X</span>
+    <ng-template #content></ng-template>
+  </div>
+</div>

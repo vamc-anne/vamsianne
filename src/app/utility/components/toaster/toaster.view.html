@@ -1,0 +1,6 @@
+<section *ngIf='showToaster'>
+    <div class="toaster" [style.background-color]='getColorByType(toast.type)'>
+        {{toast.message}}
+        <span class='close fa fa-window-close' (click)='closeToaster()' *ngIf='toast.canClose'></span>
+    </div>
+</section>

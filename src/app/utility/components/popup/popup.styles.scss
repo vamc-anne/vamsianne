@@ -1,0 +1,50 @@
+.popup {
+  z-index: 100000;
+  position: absolute;
+  display: block;
+  border: solid 1px grey;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 1px 1px 1px grey;
+  left:30%;
+  right:30%;
+  top: 20%;
+  &.medium{
+      margin: 10%;
+  }
+  &.small{
+    margin: 0 20%;
+  }
+}
+
+@media(max-width: 1050px){
+  .popup {
+    left:3%;
+    right:3%;
+    top: 20%;
+  }
+}
+
+.modalBck {
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalClose {
+  z-index: 10000;
+  display: none;
+}
+
+.modalCloseBtn {
+  right: 0px;
+  position: absolute;
+  margin-right: 15px;
+  cursor: pointer;
+}

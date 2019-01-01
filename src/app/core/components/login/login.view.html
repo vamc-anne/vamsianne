@@ -1,0 +1,6 @@
+<section class="login">
+    <google-auth [config]='FBconfig' (onError)='errorHandler($event)' (onAuth)='AuthHandler($event)'></google-auth>
+    <login-phone [config]='FBconfig' (onCancel)='cancelHandler($event)' (onAuth)='AuthHandler($event)'></login-phone>
+    <email-auth [config]='FBconfig' (onCancel)='cancelHandler($event)' (onAuth)='AuthHandler($event)'></email-auth>
+    <button class="anonmyusauth" (click)='loginAsAnonymous()'><i class="fa fa-question"></i>&nbsp;&nbsp; Login as Anonymous</button>
+</section>

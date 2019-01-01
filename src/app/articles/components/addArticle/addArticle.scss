@@ -1,0 +1,15 @@
+/deep/ .contentEditor {
+  margin: 3% 10%;
+}
+.formField-itm {
+  margin: 0px 20%;
+}
+
+@media (max-width: 1050px){
+  .formField-itm {
+    margin: 0px 8%;
+  }
+  /deep/ .contentEditor {
+    margin: 3% 8%;
+  }
+}
